@@ -2,67 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" />
-    <title>Muhammad Al Fatih</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Al Fatih</title>
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css">
+  <!-- CSS Feather Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+  <style>
+    body {
+      background: linear-gradient(#764ba2, #6B8DD6, #8e44ad,#f1f1f1);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color:wheat;
+    }
+
+    header {
+      background-color:linear-gradient(#764ba2, #6B8DD6, #8e44ad,#f1f1f1);
+      padding: 20px;
+      text-align: center;
+      color: black ;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    img.profile {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-top: 20px;
+      border: 5px solid white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      margin: 20px;
+      background-color:rgba(14, 64, 230, 0.952);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #0b1016;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: linear-gradient(#764ba2, #6B8DD6, #8e44ad);
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 
-<style>
-    body {
-        background: linear-gradient(45deg, #667eea, #1f21c7, #6b8dd6, #8e44ad);
-        padding: 20px;
-    }
-
-    .img-fluid {
-        max-width: 100%;
-        height: auto;
-    }
-</style>
-
 <body>
-    <div class="container">
-        <h1>Identitas Mahasiswa</h1>
+  <header>
+    <!-- Header aplikasi web -->
+    <h1>Aplikasi Web Saya</h1>
+    <img src="img/formal.jpg" alt="Photo Mahasiswa" class="profile">
+  </header>
 
-        <div class="col-md-6">
-            <img id="photo" src="img/profile.png" alt="Foto Mahasiswa" class="img-fluid" />
-        </div>
+  <main>
+    <!-- Identitas Mahasiswa -->
+    <h2>Identitas Mahasiswa</h2>
+    <ul>
+      <li>NIM: <span id="nim">6701223001</span></li>
+      <li>Nama Mahasiswa: <span id="nama">Muhammad Al Fatih</span></li>
+      <li>Kelas: <span id="kelas">D3SI-46-01</span></li>
+    </ul>
 
-        <div class="row">
-            <div class="col-md-6">
-                <p><strong>NIM:</strong> <span id="nim">6701223001</span></p>
-                <p><strong>Nama:</strong> <span id="nama">Muhammad Al Fatih</span></p>
-                <p><strong>Kelas:</strong> <span id="kelas">D3SI-46-01</span></p>
-            </div>
-        </div>
+    <!-- Informasi Mata Kuliah -->
+    <h2>Informasi Mata Kuliah</h2>
+    <ul>
+      <li>Nama Mata Kuliah: <span id="matakuliah">Web Development</span></li>
+    </ul>
 
-        <h2>Mata Kuliah</h2>
-        <p>
-            <strong>Nama Mata Kuliah:</strong>
-            <span id="mataKuliah">Arsitektur Jaringan Komputer</span>
-        </p>
-        <p><strong>Pembahasan Tentang Router:</strong></p>
-        <h4>Foto Router</h4>
-        <img id="routerPhoto" src="img/Router.jpeg" alt="Foto Router" class="img-fluid" />
-        <p>
-            Router adalah perangkat yang berfungsi untuk mentransmisikan paket data
-            dari jaringan internet ke perangkat lain melalui proses routing. Proses
-            routing sendiri merupakan proses meneruskan paket jaringan satu dengan
-            yang lainnya.
-        </p>
+    <!-- Pembahasan tentang Router -->
+    <h2>Pembahasan tentang Router</h2>
+    <p>
+        Router adalah perangkat yang berfungsi untuk mentransmisikan paket data dari jaringan internet ke perangkat lain melalui proses routing. Proses routing sendiri merupakan proses meneruskan paket jaringan satu dengan yang lainnya.
+    </p>
+    <h5>Foto Router</h5>
+    <img src="img/Router.jpeg" alt="Foto Router">
+    <p>
+      Sumber Materi: <a href="https://www.dewaweb.com/blog/apa-itu-router/">Sumber Materi tentang Router</a>
+    </p>
+    <p>
+      Link PDF: <a href="https://repository.dinamika.ac.id/id/eprint/2334/5/BAB_III.pdf"><i data-feather="file-text"></i> PDF tentang Router</a>
+    </p>
+  </main>
 
-        <p>
-            <strong>Sumber Materi:</strong>
-            <a href="https://www.dewaweb.com/blog/apa-itu-router/">sumber materi</a>
-        </p>
-        <p>
-            <strong>Link PDF:</strong>
-            <a href="https://repository.dinamika.ac.id/id/eprint/2334/5/BAB_III.pdf">link pdf
-            </a>
-        </p>
-    </div>
+  <footer>
+    <!-- Footer aplikasi web -->
+    <p>Hak Cipta &copy; 2023 Muhammad Al Fatih</p>
+  </footer>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript Bootstrap dan Feather Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace(); // Mengganti ikon Feather menjadi SVG
+  </script>
 </body>
 
 </html>
